@@ -1,0 +1,394 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "hey there",
+        "hello bot",
+        "assalam o alaikum",
+        "salam"
+      ],
+      "responses": [
+        "Hi! I'm Brewie, BrewBox's assistant. Ask me about plans, delivery, orders or brewing.",
+        "Hello! How can I help with your coffee today?"
+      ],
+      "suggestions": [
+        "See plans",
+        "Delivery time",
+        "Track my order"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "talk to you later",
+        "that is all",
+        "i am done",
+        "good night",
+        "see ya",
+        "cya",
+        "catch you later",
+        "take care"
+      ],
+      "responses": [
+        "Goodbye! Enjoy your coffee.",
+        "Bye! Come back any time you have a question."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "that helps",
+        "great thanks",
+        "appreciate it",
+        "awesome thank you",
+        "thx",
+        "thanks so much",
+        "many thanks",
+        "cheers"
+      ],
+      "responses": [
+        "You're welcome! Anything else I can help with?",
+        "Happy to help!"
+      ]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "who are you",
+        "what is your name",
+        "are you a bot",
+        "are you human",
+        "what can you do",
+        "how can you help me",
+        "what do you do",
+        "real person",
+        "are you a robot",
+        "is this a real person",
+        "am i talking to a robot"
+      ],
+      "responses": [
+        "I'm Brewie, an automated assistant for BrewBox. I can answer questions about plans, prices, delivery, orders, payments and brewing tips. For anything else I'll point you to our support team."
+      ],
+      "suggestions": [
+        "See plans",
+        "Payment methods",
+        "Contact support"
+      ]
+    },
+    {
+      "tag": "about_company",
+      "patterns": [
+        "what is brewbox",
+        "tell me about your company",
+        "about brewbox",
+        "who runs brewbox",
+        "what do you sell",
+        "what is this website",
+        "tell me about your coffee"
+      ],
+      "responses": [
+        "BrewBox delivers freshly roasted coffee beans to your door. We roast in small batches every week and ship within 48 hours of roasting."
+      ],
+      "suggestions": [
+        "See plans",
+        "Delivery time"
+      ]
+    },
+    {
+      "tag": "plans",
+      "patterns": [
+        "what plans do you have",
+        "subscription plans",
+        "coffee subscription options",
+        "show me your plans",
+        "what subscriptions are available",
+        "plan details",
+        "which plan should i choose",
+        "see plans",
+        "which plans can i pick",
+        "what are your plans"
+      ],
+      "responses": [
+        "We have three plans:\n• Starter: 250 g every 2 weeks, $12/month\n• Regular: 500 g every 2 weeks, $22/month\n• Family: 1 kg every 2 weeks, $39/month\nYou can pause or switch any time."
+      ],
+      "suggestions": [
+        "Cancel subscription",
+        "Discounts",
+        "Payment methods"
+      ]
+    },
+    {
+      "tag": "pricing",
+      "patterns": [
+        "how much does it cost",
+        "what is the price",
+        "how much is a bag",
+        "price of coffee",
+        "cost of subscription",
+        "is it expensive",
+        "how much do i pay",
+        "how much for a bag of beans",
+        "price per bag"
+      ],
+      "responses": [
+        "Plans start at $12/month for the Starter plan. One-off bags are $9 for 250 g. Shipping is free on all subscriptions."
+      ],
+      "suggestions": [
+        "See plans",
+        "Discounts"
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "how long does delivery take",
+        "when will my coffee arrive",
+        "delivery time",
+        "how many days for shipping",
+        "how fast do you ship",
+        "when will i receive my order",
+        "shipping duration",
+        "delivery tiem",
+        "delivry time",
+        "how many days until it arrives"
+      ],
+      "responses": [
+        "Orders ship within 48 hours of roasting. Delivery takes 2 to 4 business days in most areas and 5 to 8 business days internationally."
+      ],
+      "suggestions": [
+        "Track my order",
+        "Shipping countries"
+      ]
+    },
+    {
+      "tag": "shipping_countries",
+      "patterns": [
+        "do you ship internationally",
+        "which countries do you deliver to",
+        "do you deliver to pakistan",
+        "can you ship abroad",
+        "shipping countries",
+        "do you ship to europe",
+        "international shipping"
+      ],
+      "responses": [
+        "We ship to 35 countries, including the US, UK, UAE, Pakistan and most of the EU. Enter your address at checkout to see if your area is covered."
+      ],
+      "suggestions": [
+        "Delivery time",
+        "Payment methods"
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "where is my order",
+        "track my order",
+        "order status",
+        "how can i track my package",
+        "my parcel has not arrived",
+        "tracking number",
+        "has my order shipped",
+        "package is late"
+      ],
+      "responses": [
+        "You can track your order from the confirmation email, or under Account > Orders using your tracking number. If it has been more than 8 business days, contact support and we'll look into it."
+      ],
+      "suggestions": [
+        "Contact support",
+        "Returns and refunds"
+      ]
+    },
+    {
+      "tag": "returns",
+      "patterns": [
+        "can i return my coffee",
+        "refund policy",
+        "i want my money back",
+        "my order arrived damaged",
+        "wrong item received",
+        "how do i get a refund",
+        "return policy",
+        "returns and refunds"
+      ],
+      "responses": [
+        "If your order arrives damaged or incorrect, message us within 7 days with a photo and we'll send a replacement or refund you in full. Opened bags that you simply didn't enjoy can be swapped once for a different roast."
+      ],
+      "suggestions": [
+        "Contact support",
+        "Cancel subscription"
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "what payment methods do you accept",
+        "can i pay with credit card",
+        "do you accept paypal",
+        "is cash on delivery available",
+        "how can i pay",
+        "payment options",
+        "do you take debit cards",
+        "payment methods",
+        "pay by mastercard",
+        "pay with visa",
+        "pay by card",
+        "pay using paypal",
+        "pay with apple pay"
+      ],
+      "responses": [
+        "We accept Visa, Mastercard, PayPal and Apple Pay. Cash on delivery is available in selected cities in Pakistan."
+      ],
+      "suggestions": [
+        "See plans",
+        "Discounts"
+      ]
+    },
+    {
+      "tag": "cancel",
+      "patterns": [
+        "how do i cancel my subscription",
+        "i want to cancel",
+        "stop my subscription",
+        "pause my plan",
+        "can i skip a delivery",
+        "unsubscribe",
+        "cancel subscription",
+        "end my membership"
+      ],
+      "responses": [
+        "You can cancel, pause or skip a delivery under Account > Subscription. There are no fees, and changes made 3 days before your next shipment apply to that shipment."
+      ],
+      "suggestions": [
+        "Contact support",
+        "See plans"
+      ]
+    },
+    {
+      "tag": "discount",
+      "patterns": [
+        "do you have any discounts",
+        "promo code",
+        "coupon",
+        "is there a student discount",
+        "first order offer",
+        "any deals",
+        "how do i get a discount",
+        "discounts"
+      ],
+      "responses": [
+        "New customers get 15% off their first month with code WELCOME15. Students get 10% off with a valid student email."
+      ],
+      "suggestions": [
+        "See plans",
+        "Payment methods"
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "how can i contact support",
+        "i need to talk to a human",
+        "customer service number",
+        "support email",
+        "speak to an agent",
+        "i have a problem with my account",
+        "contact support",
+        "how do i reach you",
+        "speak with customer support",
+        "talk to someone",
+        "customer support",
+        "i need help from your team"
+      ],
+      "responses": [
+        "Our support team is at support@brewbox.example, Monday to Saturday, 9am to 6pm. Live chat on this page is also staffed during those hours."
+      ]
+    },
+    {
+      "tag": "brewing",
+      "patterns": [
+        "how do i brew coffee",
+        "best way to make coffee",
+        "what grind size should i use",
+        "how much coffee per cup",
+        "tips for french press",
+        "how to make espresso at home",
+        "water temperature for coffee",
+        "brewing tips"
+      ],
+      "responses": [
+        "A good starting point: 60 g of coffee per litre of water, water at 92 to 96 °C. Use a coarse grind for French press, medium for filter and fine for espresso."
+      ],
+      "suggestions": [
+        "See plans",
+        "Which roast is best"
+      ]
+    },
+    {
+      "tag": "roasts",
+      "patterns": [
+        "which roast is best",
+        "what is the difference between light and dark roast",
+        "do you have decaf",
+        "what beans do you use",
+        "which coffee is the strongest",
+        "do you sell espresso beans",
+        "types of coffee beans",
+        "recommend a coffee"
+      ],
+      "responses": [
+        "We offer light, medium and dark roasts, all single-origin Arabica, plus a Swiss-water decaf. Light is brighter and fruitier, dark is bolder and more bitter. If you're unsure, start with our medium roast."
+      ],
+      "suggestions": [
+        "See plans",
+        "Brewing tips"
+      ]
+    },
+    {
+      "tag": "out_of_scope",
+      "patterns": [
+        "who won the world cup",
+        "tell me a joke",
+        "what is the weather today",
+        "what is the capital of france",
+        "tell me a story",
+        "latest news",
+        "sports scores",
+        "who is the president",
+        "can you write code for me",
+        "what is the meaning of life",
+        "sing me a song",
+        "do you like football"
+      ],
+      "responses": [
+        "That's outside what I can help with. I'm here for BrewBox questions about plans, delivery, orders, payments and brewing."
+      ],
+      "suggestions": [
+        "See plans",
+        "Delivery time",
+        "Contact support"
+      ]
+    }
+  ],
+  "fallback": [
+    "Sorry, I didn't quite get that. Could you rephrase it, or pick one of the topics below?",
+    "I'm not sure I understand. I can help with plans, delivery, orders, payments and brewing."
+  ],
+  "fallback_suggestions": [
+    "See plans",
+    "Delivery time",
+    "Contact support"
+  ]
+}
