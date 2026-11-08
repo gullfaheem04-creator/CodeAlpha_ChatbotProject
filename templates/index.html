@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrewBox | Freshly roasted coffee, delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <span class="logo">BrewBox</span>
+    <nav aria-label="Main">
+      <a href="#plans">Plans</a>
+      <a href="#how">How it works</a>
+      <a href="#" id="nav-chat">Ask Brewie</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Coffee roasted this week, at your door in days.</h1>
+      <p>Small-batch single-origin beans, roasted every Monday and shipped within 48 hours. Pause or cancel whenever you like.</p>
+      <a class="btn" href="#plans">Choose a plan</a>
+    </section>
+
+    <section id="plans" class="plans">
+      <h2>Pick your pace</h2>
+      <div class="plan-row">
+        <article class="plan"><h3>Starter</h3><p class="price">$12<span>/month</span></p><p>250 g every 2 weeks</p></article>
+        <article class="plan featured"><h3>Regular</h3><p class="price">$22<span>/month</span></p><p>500 g every 2 weeks</p></article>
+        <article class="plan"><h3>Family</h3><p class="price">$39<span>/month</span></p><p>1 kg every 2 weeks</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="how">
+      <h2>From roaster to mug</h2>
+      <p>We roast on Monday, pack on Tuesday and hand the parcel to the courier by Wednesday. You get a tracking link the same day. Questions? Brewie, our chat assistant, is in the corner.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">BrewBox demo site. Built for the CodeAlpha Cloud Computing internship.</footer>
+
+  <!-- Chat widget -->
+  <button class="chat-launcher" id="chat-launcher" aria-expanded="false" aria-controls="chat-panel">
+    <span class="launcher-label">Ask Brewie</span>
+  </button>
+
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-label="Chat with Brewie" hidden>
+    <header class="chat-head">
+      <div>
+        <strong>Brewie</strong>
+        <span>BrewBox assistant</span>
+      </div>
+      <button class="chat-close" id="chat-close" aria-label="Close chat">&times;</button>
+    </header>
+    <div class="chat-log" id="chat-log" role="log" aria-live="polite"></div>
+    <div class="chat-chips" id="chat-chips"></div>
+    <div class="chat-form">
+      <input id="chat-input" type="text" maxlength="300" placeholder="Type your question" autocomplete="off" aria-label="Your message">
+      <button id="chat-send" class="chat-send">Send</button>
+    </div>
+  </section>
+
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
